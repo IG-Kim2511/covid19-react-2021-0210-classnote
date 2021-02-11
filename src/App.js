@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
-import './style.scss';
+// import './style.scss';
+
+// r 10 , 파일명 js는 생략 가능
+import Header from './components/Header'
+import Contents from './components/Contents'
 
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <h1>COVID-19</h1>
-          <select name="" id="">
-            <option value="">국내</option>
-            <option value="">세계</option>
-          </select>
-      
-      </header>
-
-      <section>
-        <h2>국내 코로나 현황</h2>
-        <div className="contents">
-        </div>
-      </section>
+    
+    {/* react 9 components */}
+    <Header/>  
+    <Contents></Contents>
+    
     </div>
   )
 }
